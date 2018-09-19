@@ -1,21 +1,43 @@
 {
   "name": "techscreen",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server/index.js",
   "repository": "https://github.com/rebdugnz/techscreen.git",
   "author": "Rebecca Dugdale <bec.dugdale16@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --watch server",
+    "postinstall": "webpack",
+    "dev": "nodemon --watch server & webpack --watch",
     "start": "node server/index",
     "test": "jest"
   },
+  "babel": {
+      "presets": [
+        "es2015",
+        "react",
+        "stage-3"
+      ]
+    },
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "css-loader": "^1.0.0",
     "express": "^4.16.3",
-    "jest": "^23.6.0",
-    "nodemon": "^1.18.4",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-router-dom": "^4.3.1"
+    "jest": "^23.5.0",
+    "jsdom": "^12.0.0",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1",
+    "superagent": "^3.8.3",
+    "supertest": "^3.1.0",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-cli": "^3.1.0"
   }
 }
