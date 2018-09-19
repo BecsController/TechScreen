@@ -1,0 +1,21 @@
+{
+  "name": "techscreen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rebdugnz/techscreen.git",
+  "author": "Rebecca Dugdale <bec.dugdale16@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch server",
+    "start": "node server/index",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-router-dom": "^4.3.1"
+  }
+}
