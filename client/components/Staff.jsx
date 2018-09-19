@@ -4,15 +4,12 @@ import getDistance from '../../server/distance'
 import {staff} from '../../staff_list.json'
 
 let sortedStaff = staff.filter(staffMember => getDistance(staffMember.location.latitude, staffMember.location.longitude) <= 2)
-//filter staff who are within 2km of office
 
 sortedStaff.sort((a, b) => a.name > b.name)
-//sort filtered staff into alphabetical order
 
 sortedStaff.map(employee => employee.distance = getDistance(employee.location.latitude, employee.location.longitude).toFixed(2))
-//add new key value pair to each employee of the result of the distance function
 
-const Staff = (props) => {
+const Staff = () => {
 
   return (
     <div className="hero-body columns">
