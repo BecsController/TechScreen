@@ -12,12 +12,12 @@
     "test": "jest"
   },
   "babel": {
-      "presets": [
-        "es2015",
-        "react",
-        "stage-3"
-      ]
-    },
+    "presets": [
+      "es2015",
+      "react",
+      "stage-3"
+    ]
+  },
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -36,8 +36,6 @@
     "react-router-dom": "^4.3.1",
     "superagent": "^3.8.3",
     "supertest": "^3.1.0",
-    "webpack": "^2.3.3",
-    "webpack-dev-server": "^3.1.5",
-    "webpack-cli": "^3.1.0"
+    "webpack": "^2.3.3"
   }
 }
